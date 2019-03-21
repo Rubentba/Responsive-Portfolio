@@ -3,65 +3,68 @@
 
 <head>
     <title>Basic-Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-    
+
 <body>
-    <header>
+    <header id="mainHeader">
         <div class="container">
 
-            <div class="name"><h2>Ruben Torres Beltran</h2></div>
+            <div class="name"><a href="index.html" id="logo">Ruben Torres Beltran</a></li></div>
 
             <nav>
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="index.html">About</a></li>
-                </ul>
+                <a href="contact.html">Contact</a></li>
+                <a href="portfolio.html">Portfolio</a></li>
+                <a href="index.html">About</a></li>
             </nav>
         </div>
     </header>
 
-    <div class="wrapper">
+    <div id="mainContainer" class="container">
+        <section class="mainBody">
 
-        <section class="headingText"><h1>Portfolio</h1></section>
+            <h1>Portfolio</h1>
 
-        <section>
-<!--This is the part I got stuck on. I am assuming you would wrap the image around with a div and
-    then use position to place the p tags with in the image. Then finish by adding padding around
-    the p tag with in the css and making the p tag a link. Yet, everytime I attempted to do this
-    breaks and I am not sure why. Due to job obligations I could not finish this last bit on time.
-    -->
-            <div class="imgContainer">
-                <img src="assets/images/imgOne.jpg" alt="Placeholder One" > 
-                <p id="HM"> Hangman</p>
+            <div class="projects">
+                    <img src="assets/images/imgOne.jpg" class="authImage" alt="Hangman" > 
+                    <h3>Hangman</h3>
+            </div>
+    
+            <div class="projects">
+                <img src="assets/images/imgTwo.jpg" class="authImage" alt="RPG Game" > 
+                <h3>RPG Game</h3>
             </div>
 
-            <div class="imgContainer">
-                <img src="assets/images/imgTwo.jpg" alt="Placeholder Two" > 
-                <p id="RPG"> RPG Game</p>
+            <div class="projects">
+                <img src="assets/images/imgThree.jpg" class="authImage" alt="Trivia Game" > 
+                <h3>Trivia Game</h3>
             </div>
-
-            <div class="imgContainer">
-                <img src="assets/images/imgThree.jpg" alt="Placeholder Three" > 
-                <p id="TG"> Trivia Game</p>
+    
+            <div class="projects">
+                <img src="assets/images/imgFour.jpg" class="authImage" alt="Rutgers Info Widget" > 
+                <h3>Rutgers Info Widget</h3>
             </div>
-
-            <div class="imgContainer">
-                <img src="assets/images/imgFour.jpg" alt="Placeholder Four" > 
-                <p id="RIW"> Rutgers Info Widget</p>
-            </div>
-
-            <div class="imgContainer">
-                <img src="assets/images/imgFive.jpg" alt="Placeholder Five" > 
-                <p id="RPS"> Rock Paper Scissors</p>
+    
+            <div class="projects">
+                <img src="assets/images/imgFive.jpg" class="authImage" alt="Rock Paper Scissors" > 
+                <h3>Rock Paper Scissors</h3>
             </div>
 
         </section>
-    </div>
         
-    <div class ="empty"></div>
+        <section class="sidebar">
+                <div id="connect">
 
-    <footer><p>Copyright &copy;</p></footer>
+                    <h2>Connect With Me</h2>
+
+                    <img src="assets/images/githubIcon.png" class="social" alt="Github">
+                    <img src="assets/images/linkedinIcon.png" class="social" alt="Linkedin">
+                </div>
+        </section>
+    </div>
+
+    <footer><div class="container">&copy; Copyright 2019 Ruben Torres Beltran</div></footer>
 </body>
 </html>

@@ -4,46 +4,54 @@
 <head>
     <title>Basic-Portfolio</title>
 
-   <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 
 <body>
-    <header>
+    <header id="mainHeader">
         <div class="container">
-        
-            <div class="name"><h2>Ruben Torres Beltran</h2></div>
-        
+
+            <div class="name"><a href="index.html" id="logo">Ruben Torres Beltran</a></li></div>
+
             <nav>
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="index.html">About</a></li>
-                </ul>
+                <a href="contact.html">Contact</a></li>
+                <a href="portfolio.html">Portfolio</a></li>
+                <a href="index.html">About</a></li>
             </nav>
         </div>
     </header>
 
-    <div class="wrapper">
+    <div id="mainContainer" class="container">
+        <section class="mainBody">
 
-        <section class="headingText"><h1>Contact</h1></section>
-    
-        <div class="inputs">
-    
-            Name <input id="inputName" type="text" name="Name">
-    
-            Email <input id="inputEmail" type="text" name="Email">
-    
-            Message <input id="inputMessage" type="text" name="Message">
-    
-            <input id="buttonSubmit" type="submit" value="Submit">
-    
-        </div>
+            <h1>Contact</h1>
+
+            <form id="contactForm">
+                    
+                Name <input id="inputName" type="text" name="Name">
+
+                Email <input id="inputEmail" type="text" name="Email">
+
+                Message <input id="inputMessage" type="text" name="Message">
+
+                <input id="buttonSubmit" type="submit" value="Submit">
+
+            </form>
+
+        </section>
+        
+        <section class="sidebar">
+                <div id="connect">
+
+                    <h2>Connect With Me</h2>
+
+                    <img src="assets/images/githubIcon.png" class="social" alt="Github">
+                    <img src="assets/images/linkedinIcon.png" class="social" alt="Linkedin">
+                </div>
+        </section>
     </div>
 
-    <div class ="empty"></div>
-
-    <footer><p>Copyright &copy;</p></footer>
+    <footer><div class="container">&copy; Copyright 2019 Ruben Torres Beltran</div></footer>
 </body>
 </html>
