@@ -234,9 +234,29 @@ input {
 }
 
 @media screen and (max-width: 980px) {
+    /* This section seems to already mimic the photos to an extent. It isn't a perfect copy due to my elements being
+    different lengths than the examples (paragraph is larger than the example in my about page.), so this has been
+    left unchanged. */
 }
 
 @media screen and (max-width: 768px) {
+    /* Contact About */
+    #mainSectionAbout {
+        margin: 20px;
+        margin-bottom: 300px;
+    }
+
+
+    /* Portfolio Changes */
+    #mainSectionPortfolio {
+        margin: 20px;
+    } 
+
+    /* Contact Changes */
+     #mainSectionContact {
+        margin: 20px;
+        margin-bottom: 300px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -267,6 +287,6 @@ input {
     }
     /* Contact Change */
     #mainSectionContact{
-        margin-bottom: 300px;
+        margin-bottom: 200px;
     }
 }
